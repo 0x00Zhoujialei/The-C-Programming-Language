@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+/* count blanks, tabs, newlines */
+
+int
+main() {
+	long nl;
+	int c;
+
+	while ((c = getchar()) != EOF) {
+		if (' ' == c || '\t' == c || '\n' == c) {
+			++nl;
+		}
+	}
+
+	printf("%ld\n", nl);
+}
